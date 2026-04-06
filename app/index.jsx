@@ -1,6 +1,9 @@
+import { useRouter } from "expo-router";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const HomeScreen = () => {
+	const router = useRouter();
+
 	return (
 		<View style={styles.container}>
 			<Image
@@ -12,11 +15,17 @@ const HomeScreen = () => {
 				Personal library management app.
 			</Text>
 
-			<TouchableOpacity style={styles.button} onPress={() => {}}>
+			<TouchableOpacity
+				style={styles.button}
+				onPress={() => router.push("/library")}
+			>
 				<Text style={styles.buttonText}>Library</Text>
 			</TouchableOpacity>
 
-			<TouchableOpacity style={styles.button} onPress={() => {}}>
+			<TouchableOpacity
+				style={styles.button}
+				onPress={() => router.push("/logs")}
+			>
 				<Text style={styles.buttonText}>Logs</Text>
 			</TouchableOpacity>
 		</View>
