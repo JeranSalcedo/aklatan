@@ -38,7 +38,7 @@ const TabsLayout = () => {
 			<Tabs.Screen
 				name="library"
 				options={{
-					title: "Library",
+					headerTitle: "Library",
 					tabBarIcon: ({ focused, color }) => (
 						<Ionicons
 							name={focused ? "library" : "library-outline"}
@@ -51,7 +51,7 @@ const TabsLayout = () => {
 			<Tabs.Screen
 				name="logs"
 				options={{
-					title: "Logs",
+					headerTitle: "Logs",
 					tabBarIcon: ({ focused, color }) => (
 						<Ionicons
 							name={
@@ -68,7 +68,7 @@ const TabsLayout = () => {
 			<Tabs.Screen
 				name="profile"
 				options={{
-					title: "Profile",
+					headerTitle: "Profile",
 					tabBarIcon: ({ focused, color }) => (
 						<Ionicons
 							name={
