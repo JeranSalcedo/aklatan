@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
-const App = () => {
+const HomeScreen = () => {
 	return (
 		<View style={styles.container}>
 			<Text>Aklatan</Text>
@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default App;
+export default HomeScreen;
